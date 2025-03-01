@@ -662,44 +662,16 @@ GameObject:
   - component: {fileID: 721862487}
   - component: {fileID: 721862486}
   - component: {fileID: 721862485}
-  - component: {fileID: 721862482}
   - component: {fileID: 721862488}
   - component: {fileID: 721862489}
+  - component: {fileID: 721862490}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &721862482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721862481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 811855b7ca5e42d4e901bb895eb42cf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 7
-  acceleration: 60
-  deceleration: 10
-  velocityPower: 0.9
-  jumpForce: 15
-  fallGravityMultiplier: 2.5
-  jumpGravityMultiplier: 2
-  coyoteTime: 0.3
-  groundCheck: {fileID: 857830711}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCheckRadius: 0.2
-  horizontalInput: 0
-  coyoteTimeCounter: 0
-  isJumping: 0
 --- !u!23 &721862485
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -843,6 +815,34 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &721862490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721862481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811855b7ca5e42d4e901bb895eb42cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+  acceleration: 60
+  deceleration: 10
+  velocityPower: 0.9
+  jumpForce: 15
+  fallGravityMultiplier: 2.5
+  jumpGravityMultiplier: 2
+  coyoteTime: 0.3
+  groundCheck: {fileID: 857830711}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckRadius: 0.2
+  horizontalInput: 0
+  coyoteTimeCounter: 0
+  isJumping: 0
 --- !u!1 &850691268
 GameObject:
   m_ObjectHideFlags: 0
